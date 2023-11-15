@@ -35,12 +35,14 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      maxAge: 24 * 60 * 60 * 2000,// 2 day=============
-      secure:true,
-      sameSite:"none"
+      maxAge: 24 * 60 * 60 * 2000, // 2 days
+      secure: true,
+      sameSite: "none",
+      domain: '.onrender.com', // Adjust this to your root domain
     },
   })
 );
+
 
 // app.use((req, res, next) => {
 //   console.log("Request Session ID:", req.sessionID);
