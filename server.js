@@ -17,7 +17,7 @@ const app = express();
 // app.use(cors());
 
 const corsOptions = {
-  origin: "http://localhost:3000", // Replace with your frontend URL
+  origin: "https://loquacious-croquembouche-7c162f.netlify.app", // Replace with your frontend URL
   credentials: true,
 };
 
